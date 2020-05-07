@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+
+
+@import "bulma/sass/utilities/_all.sass";
+
+@import "bulmaswatch/darkly/_variables.scss";
+
+$primary: $blue;
+$link: $blue;
+$link-hover: darken($link, 5);
+$navbar-background-color: $grey-darker;
+$navbar-dropdown-background-color: $grey-darker;
+
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/elements/_all.sass";
+@import "bulma/sass/form/_all.sass";
+@import "bulma/sass/elements/_all.sass";
+@import "bulma/sass/components/_all.sass";
+@import "bulma/sass/layout/_all.sass";
+@import "bulma/sass/grid/_all.sass";
+
+@import "bulmaswatch/darkly/_overrides.scss";
+
+
+.navbar-brand a {
+	color: $white;
+}
+body > .section {
+	padding-top:0;
+}
+
+.navbar.is-fixed-top.is-spaced {
+    padding-top: 0;
+    padding-bottom: 0;
+    .navbar-brand > .navbar-item {
+	    padding-left: 0;
+	}
+}
+
+.menu-label {
+	padding: $menu-list-link-padding;
+}
+
+.mini-map {
+	background: $green;
+	height: $icon-dimensions;
+	width: $icon-dimensions;
+	display:inline-block;
+	float:right;
+	border-radius: $radius-large;
+}
+
+.fixed-column {
+	top:4rem;
+	bottom:0;
+	position:fixed;
+	max-height: 100vh;
+	overflow-y:scroll;
+}
+
+.disabled {
+	cursor: not-allowed;
+}
+.disabled > a {
+	pointer-events: none;
+	opacity:50%;
+}
+//@import "~bulma/bulma";
+
+/*input {
+	border:1px solid red;
+}*/
+
