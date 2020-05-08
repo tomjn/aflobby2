@@ -1,3 +1,3 @@
 const InitialState = {};
 
-export default initialState;
+export default InitialState;

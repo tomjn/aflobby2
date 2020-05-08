@@ -1,6 +1,6 @@
-import initialState from '../state';
+import InitialState from '../state';
 
-const emptyReducer = (state = initialState, action) => {
+const emptyReducer = (state = InitialState, action) => {
 	return state;
 };
 
