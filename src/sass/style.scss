@@ -1,6 +1,8 @@
 @charset "utf-8";
 
+//@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
+$bulmaswatch-import-font: false;
 
 @import "bulma/sass/utilities/_all.sass";
 
@@ -23,11 +25,20 @@ $navbar-dropdown-background-color: $grey-darker;
 @import "bulmaswatch/darkly/_overrides.scss";
 
 
+html {
+	min-height:100vh;
+	background: fixed linear-gradient(0deg, rgba(31,36,36,1) 10%, rgba(38,44,45,1) 37%, rgba(28,38,45,1) 100%);
+}
+
 .navbar-brand a {
 	color: $white;
 }
 body > .section {
 	padding-top:0;
+}
+
+.section.main-area {
+	padding-top:1rem;
 }
 
 .navbar.is-fixed-top.is-spaced {

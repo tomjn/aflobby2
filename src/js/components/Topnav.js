@@ -1,27 +1,25 @@
 import { Link } from "react-router-dom";
 
 const Topnav = ({ username }) => {
-	return <nav class="navbar is-fixed-top is-spaced" role="navigation" aria-label="top navigation">
-		<div class="navbar-brand">
-			<a class="navbar-item">
-				<h1 class="title">
-					<Link to="/">
+	return <nav className="navbar is-fixed-top is-spaced" role="navigation" aria-label="top navigation">
+		<div className="navbar-brand">
+			<Link to="/" className="navbar-item">
+				<h1 className="title">
 						AFLobby 2
-					</Link>
 				</h1>
-			</a>
+			</Link>
 		</div>
-		<div class="navbar-end">
-			<div class="navbar-item has-dropdown is-hoverable">
-				<a class="navbar-link">
+		<div className="navbar-end">
+			<div className="navbar-item has-dropdown is-hoverable">
+				<a className="navbar-link">
 					Hello {username}
 				</a>
-				<div class="navbar-dropdown">
-					<Link class="navbar-item" to="/profile">
+				<div className="navbar-dropdown">
+					<Link className="navbar-item" to="/profile">
 						Profile
 					</Link>
-					<hr class="navbar-divider" />
-					<a class="navbar-item">
+					<hr className="navbar-divider" />
+					<a className="navbar-item">
 						Log out
 					</a>
 				</div>
