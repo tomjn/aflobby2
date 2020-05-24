@@ -1,6 +1,7 @@
 import Battle from "./Battle";
 import BattleNavItem from "./BattleNavItem";
 import Demo from "./Demo";
+import Settings from "./Settings";
 import Topnav from "./Topnav";
 
 import {
@@ -35,13 +36,6 @@ function Frame ( props ) {
 						<BattleNavItem name="Red Comet FFA" />
 						<BattleNavItem name="Red Comet FFA" />
 						<BattleNavItem name="Red Comet FFA" />
-						<BattleNavItem name="Red Comet FFA" />
-						<BattleNavItem name="Red Comet FFA" />
-						<BattleNavItem name="Red Comet FFA" />
-						<BattleNavItem name="2v2 Comet Catcher" />
-						<BattleNavItem name="2v2 Comet Catcher" />
-						<BattleNavItem name="2v2 Comet Catcher" />
-						<BattleNavItem name="2v2 Comet Catcher" />
 						<BattleNavItem name="2v2 Comet Catcher" />
 						<BattleNavItem name="2v2 Comet Catcher" />
 						<BattleNavItem name="2v2 Comet Catcher" />
@@ -63,48 +57,7 @@ function Frame ( props ) {
 							</>
 						</Route>
 						<Route path="/settings">
-							<>
-								<h1 className="title">Settings</h1>
-								<div className="box">
-									<div className="field is-horizontal">
-									  <div className="field-label is-normal">
-									    <label className="label">Favourite Faction</label>
-									  </div>
-									  <div className="field-body">
-									    <div className="field is-narrow">
-									      <div className="control">
-									        <div className="select is-fullwidth">
-									          <select>
-									            <option>Imperium of Man</option>
-									            <option>Tau</option>
-									            <option>Orc</option>
-									            <option>Eldar</option>
-									          </select>
-									        </div>
-									      </div>
-									    </div>
-									  </div>
-									</div>
-									<div className="field is-horizontal">
-									  <div className="field-label is-normal">
-									    <label className="label">Water Renderer</label>
-									  </div>
-									  <div className="field-body">
-									    <div className="field is-narrow">
-									      <div className="control">
-									        <div className="select is-fullwidth">
-									          <select>
-									            <option>Basic</option>
-									            <option>Reflective</option>
-									            <option>Dynamic</option>
-									          </select>
-									        </div>
-									      </div>
-									    </div>
-									  </div>
-									</div>
-								</div>
-							</>
+							<Settings />
 						</Route>
 						<Route path="/battle/new">
 							<>

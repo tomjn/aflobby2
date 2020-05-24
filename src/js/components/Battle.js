@@ -43,7 +43,7 @@ const Battle = () => {
 					<tfoot>
 						<tr>
 							<td colspan="3">
-								<button className="button is-fullwidth">
+								<button disabled className="button is-fullwidth">
 								    <span className="icon">
 										<i className="fas fa-user-plus"></i>
 									</span>
@@ -91,7 +91,7 @@ const Battle = () => {
 					<tfoot>
 						<tr>
 							<td colspan="3">
-								<button className="button is-fullwidth">
+								<button disabled className="button is-fullwidth">
 								    <span className="icon">
 										<i className="fas fa-user-plus"></i>
 									</span>
@@ -119,7 +119,7 @@ const Battle = () => {
 					<tfoot>
 						<tr>
 							<td>
-								<button className="button is-fullwidth">
+								<button disabled className="button is-fullwidth">
 								    <span className="icon">
 										<i className="fas fa-binoculars"></i>
 									</span>
@@ -143,7 +143,7 @@ const Battle = () => {
 								<p className="title is-4">Red Comet</p>
 							</div>
 							<div className="media-content">
-								<button className="button is-small">Change</button>
+								<button disabled className="button is-small">Change</button>
 							</div>
 						</div>
 					</div>
@@ -153,7 +153,7 @@ const Battle = () => {
 					<div className="field">
 						<div className="control">
 							<div className="select">
-								<select>
+								<select disabled>
 									<option selected>Random start position</option>
 									<option>Choose in game</option>
 								</select>
@@ -163,7 +163,7 @@ const Battle = () => {
 					<div className="field">
 						<div className="control">
 							<div className="select">
-								<select>
+								<select disabled>
 									<option selected>Destroy Enemy Commanders</option>
 									<option>Destroy all units</option>
 								</select>
@@ -178,10 +178,10 @@ const Battle = () => {
 
 					<div className="field has-addons">
 						<div className="control">
-							<input className="input" type="text" placeholder="Say something nice" />
+							<input disabled className="input" type="text" placeholder="Say something nice" />
 						</div>
 						<div className="control">
-							<a className="button">
+							<a className="button" disabled >
 								Send
 							</a>
 						</div>
@@ -190,9 +190,9 @@ const Battle = () => {
 			</div>
 		</div>
 		<div className="buttons field is-right is-grouped has-addons">
-			<button className="button">Leave</button>
-			<button className="button">Ready</button>
-			<button className="button is-primary">Start Game</button>
+			<button className="button" disabled >Leave</button>
+			<button className="button" disabled >Ready</button>
+			<button className="button is-primary" disabled >Start Game</button>
 		</div>
 	</>;
 }
