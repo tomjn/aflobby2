@@ -4,12 +4,12 @@
 
 $bulmaswatch-import-font: false;
 
-@import "bulma/sass/utilities/_all.sass";
-
 @import "bulmaswatch/darkly/_variables.scss";
+@import "bulma/sass/utilities/_all.sass";
 
 $primary: $blue;
 $link: $blue;
+$turquoise: $blue;
 $link-hover: darken($link, 5);
 $navbar-background-color: $grey-darker;
 $navbar-dropdown-background-color: $grey-darker;

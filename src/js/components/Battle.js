@@ -5,12 +5,12 @@ const Battle = () => {
 		<h1 className="title">Battle Room</h1>
 		<div className="columns">
 			<div className="column is-three-quarters">
+				<h2 className="subtitle">AFs Team</h2>
 				<table className="table is-striped is-hoverable is-fullwidth">
 					<thead>
 						<tr>
 							<th className="is-narrow">Ready</th>
 							<th>Name</th>
-							<th className="is-narrow">Team</th>
 							<th className="is-narrow">Faction</th>
 						</tr>
 					</thead>
@@ -18,7 +18,6 @@ const Battle = () => {
 						<tr className="">
 							<td><span className="tag is-success">Ready</span></td>
 							<td>AF</td>
-							<td>1</td>
 							<td>
 								<div className="select">
 									<select>
@@ -30,34 +29,7 @@ const Battle = () => {
 						</tr>
 						<tr>
 							<td><span className="tag is-success">Ready</span></td>
-							<td>Player 2</td>
-							<td>2</td>
-							<td>
-								<div className="select">
-									<select>
-										<option>Arm</option>
-										<option selected>Core</option>
-									</select>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td><span className="tag">Not Ready</span></td>
-							<td>Player 3</td>
-							<td>3</td>
-							<td>
-								<div className="select">
-									<select>
-										<option>Arm</option>
-										<option selected>Core</option>
-									</select>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td><span className="tag is-success">Ready</span></td>
-							<td>Player 4</td>
-							<td>4</td>
+							<td>Gajop</td>
 							<td>
 								<div className="select">
 									<select>
@@ -68,6 +40,94 @@ const Battle = () => {
 							</td>
 						</tr>
 					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3">
+								<button className="button is-fullwidth">
+								    <span className="icon">
+										<i className="fas fa-user-plus"></i>
+									</span>
+									<span>Join AF's team</span>
+								</button>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+				<h2 className="subtitle">IceXuicks Team</h2>
+				<table className="table is-striped is-hoverable is-fullwidth">
+					<thead>
+						<tr>
+							<th className="is-narrow">Ready</th>
+							<th>Name</th>
+							<th className="is-narrow">Faction</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr className="">
+							<td><span className="tag is-success">Ready</span></td>
+							<td>IceXuick</td>
+							<td>
+								<div className="select">
+									<select>
+										<option selected>Arm</option>
+										<option>Core</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><span className="tag is-success">Ready</span></td>
+							<td>Doo</td>
+							<td>
+								<div className="select">
+									<select>
+										<option>Arm</option>
+										<option selected>Core</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3">
+								<button className="button is-fullwidth">
+								    <span className="icon">
+										<i className="fas fa-user-plus"></i>
+									</span>
+									<span>Join IceXuick's team</span>
+								</button>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+				<h2 className="subtitle">Spectators</h2>
+				<table className="table is-striped is-hoverable is-fullwidth">
+					<thead>
+						<tr>
+							<th>Name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr className="">
+							<td>SuperNoob</td>
+						</tr>
+						<tr>
+							<td>Floris</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>
+								<button className="button is-fullwidth">
+								    <span className="icon">
+										<i className="fas fa-binoculars"></i>
+									</span>
+									<span>Become a Spectator</span>
+								</button>
+							</td>
+						</tr>
+					</tfoot>
 				</table>
 			</div>
 			<div className="column is-one-quarter">
@@ -121,7 +181,7 @@ const Battle = () => {
 							<input className="input" type="text" placeholder="Say something nice" />
 						</div>
 						<div className="control">
-							<a className="button is-info">
+							<a className="button">
 								Send
 							</a>
 						</div>
