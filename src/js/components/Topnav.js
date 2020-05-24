@@ -11,9 +11,9 @@ const Topnav = ({ username }) => {
 		</div>
 		<div className="navbar-end">
 			<div className="navbar-item has-dropdown is-hoverable">
-				<a className="navbar-link">
+				<Link className="navbar-link" to="/profile">
 					Hello {username}
-				</a>
+				</Link>
 				<div className="navbar-dropdown">
 					<Link className="navbar-item" to="/profile">
 						Profile
