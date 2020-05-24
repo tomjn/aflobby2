@@ -165,7 +165,7 @@ function Frame ( props ) {
 									</div>
 									<div className="column is-one-third is-right">
 										<div className="box">
-											<p>Skirmish</p>
+											<p>Battle offline against the computer AI</p>
 										</div>
 									</div>
 								</div>
